@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="jumbotron-heading">About Alasdair Morrison</h1>
+        </div>
+    </div>
+    <div class="container">
+        <p>Alasdair Morrison is a web developer based in the UK. He has experience in a range of technologies. These include:</p>
+        <li>
+            HTML
+            CSS
+            JavaScript
+            Python
+            Django
+            Java
+            SQL
+            and more
+        </li>
+        <br />
+        <p>Alasdair has a passion for web development and is always looking to learn new technologies. He is currently working on a number of </p>
+        <a href="{% url 'website:projects' %}">projects</a>
+        <p>which he hopes to showcase on this website.</p>
+{% endblock %}
