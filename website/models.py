@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Project(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to='project_images/', blank=True)
+    image = models.ImageField(upload_to='media/project_images/', blank=True)
     url = models.URLField(blank=True)
     date = models.DateField()
     slug = models.SlugField(unique=True)

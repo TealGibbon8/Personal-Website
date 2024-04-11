@@ -3,15 +3,20 @@
 
 {% block title %}About{% endblock %}
 
+{% block sidebar_block %}
+    <img class="about-image" src="{% static 'images/alasdair.jpg' %}" alt="Alasdair Morrison">
+{% endblock %}
+
 {% block content %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <div class="container">
         <div class="jumbotron">
             <h1 class="jumbotron-heading">About Alasdair Morrison</h1>
         </div>
     </div>
     <div class="container">
-        <p>Alasdair Morrison is a web developer based in the UK. He has experience in a range of technologies. These include:</p>
-        <li>
+        <p class="about-text">Alasdair Morrison is a web developer based in the UK. He has experience in a range of technologies. These include:</p>
+        <li class="about-list">
             HTML
             CSS
             JavaScript
@@ -22,5 +27,5 @@
             and more
         </li>
         <br />
-        <p>Alasdair has a passion for web development and is always looking to learn new technologies. He is currently working on a number of projects which he hopes to showcase on this website.</p>
+        <p class="about-text">Alasdair has a passion for web development and is always looking to learn new technologies. He is currently working on a number of projects which he hopes to showcase on this website.</p>
 {% endblock %}

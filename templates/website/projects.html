@@ -13,9 +13,10 @@
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
                         <div class="card-body">
-                            <h5 class="card-title">{{ project.title }}</h5>
+                            <h5 class="card-title">{{ project.name }}</h5>
                         </div>
                     </div>
+                    <a href="{% url 'website:project' project.slug %}" class="btn btn-primary">View</a>
                 </div>
             {% endfor %}
         </div>
